@@ -1,0 +1,8 @@
+[package]
+  name = "onnx4cj"
+  description = "ONNX C API bindings for Cangjie (仓颉)"
+  version = "0.1.0"
+  compatibility = "0.53.x"
+  output_type = "static"
+
+[dependencies]
