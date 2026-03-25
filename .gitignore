@@ -1,0 +1,31 @@
+# Build outputs
+build/
+dist/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# Cangjie compiler outputs
+*.cjo
+*.bc
+*.s
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ONNX model binary files
+*.onnx
+*.pb
+
+# Dependency caches
+.cjpm/
+
+# Log files
+*.log
