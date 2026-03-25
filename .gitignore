@@ -1,4 +1,4 @@
-# Build outputs
+# Cangjie build artifacts
 build/
 dist/
 *.o
@@ -7,25 +7,28 @@ dist/
 *.dylib
 *.dll
 
-# Cangjie compiler outputs
-*.cjo
-*.bc
-*.s
+# cjpm cache and lock
+.cjpm/
+cjpm.lock
 
 # IDE and editor files
-.idea/
 .vscode/
+.idea/
 *.swp
 *.swo
 *~
+
+# OS files
 .DS_Store
+Thumbs.db
 
-# ONNX model binary files
-*.onnx
-*.pb
-
-# Dependency caches
-.cjpm/
+# ONNX Runtime libraries (should be installed separately)
+lib/
+*.lib
 
 # Log files
 *.log
+
+# Temporary files
+tmp/
+temp/

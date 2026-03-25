@@ -1,9 +1,8 @@
 [package]
-cjc-version = "0.53.4"
-name = "onnx4cj"
-description = "ONNX Runtime C API bindings for Cangjie (仓颉) language"
-version = "0.1.0"
-compile-option = ""
-output-type = "executable"
+  name = "onnx4cj"
+  description = "ONNX C API bindings for Cangjie (仓颉)"
+  version = "0.1.0"
+  compatibility = "0.53.x"
+  output_type = "static"
 
 [dependencies]

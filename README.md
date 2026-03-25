@@ -1,35 +1,45 @@
 # Onnx4CJ
 
-**ONNX C API for 仓颉 (Cangjie)**
+**Onnx4CJ** 是一个为 [仓颉（Cangjie）](https://cangjie-lang.cn/) 编程语言提供的 [ONNX](https://onnx.ai/) C API 封装库。
 
-Onnx4CJ 是面向[仓颉（Cangjie）](https://cangjie-lang.cn/)语言的 ONNX Runtime C API 绑定库，旨在让仓颉开发者能够方便地在仓颉程序中加载和运行 ONNX 模型进行推理。
+本项目目标是通过 FFI（Foreign Function Interface）将 ONNX Runtime 的 C API 绑定到仓颉语言，使仓颉开发者可以方便地在本地运行 ONNX 模型，进行推理计算。
 
 ## 项目目标
 
-- 通过 FFI（Foreign Function Interface）封装 ONNX Runtime C API
-- 提供符合仓颉语言习惯的高层接口
-- 支持常见的 ONNX 模型推理场景
+- 封装 ONNX Runtime C API，为仓颉语言提供原生推理能力
+- 提供简洁易用的仓颉语言接口
+- 支持常见的 ONNX 模型加载与推理
 
-## 项目结构
+## 目录结构
 
 ```
 Onnx4CJ/
 ├── src/
-│   ├── ffi/       # ONNX Runtime C API 的 FFI 绑定
-│   ├── core/      # 核心库逻辑
-│   ├── tests/     # 测试文件
-│   ├── examples/  # 示例代码
-│   └── models/    # ONNX 模型文件
-├── cjpm.toml      # 仓颉包管理配置
-├── LICENSE        # Apache 2.0
+│   ├── ffi/        # FFI 封装层，绑定 ONNX Runtime C API
+│   ├── core/       # 核心逻辑实现
+│   ├── tests/      # 单元测试
+│   ├── examples/   # 示例代码
+│   └── models/     # 示例 ONNX 模型文件
+├── cjpm.toml       # 仓颉包管理器配置
+├── LICENSE         # Apache 2.0
 └── README.md
 ```
 
 ## 依赖
 
-- [ONNX Runtime](https://onnxruntime.ai/) C API
-- 仓颉（Cangjie）编译器
+- [ONNX Runtime](https://github.com/microsoft/onnxruntime)（需要预先安装）
+- [仓颉（Cangjie）](https://cangjie-lang.cn/) 编译器与工具链
+
+## 快速开始
+
+```bash
+# 构建项目
+cjpm build
+
+# 运行测试
+cjpm test
+```
 
 ## 许可证
 
-本项目遵循 [Apache License 2.0](LICENSE)。
+本项目采用 [Apache 2.0](LICENSE) 许可证。
