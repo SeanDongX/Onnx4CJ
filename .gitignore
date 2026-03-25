@@ -1,0 +1,45 @@
+# Cangjie build artifacts
+build/
+dist/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.cjo
+*.bc
+
+# cjpm cache and lock
+.cjpm/
+cjpm.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ONNX Runtime libraries (should be installed separately)
+lib/
+*.lib
+onnxruntime/
+
+# Log files
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# ONNX model binary files (large files, should be downloaded separately)
+*.onnx
+*.pb
+!src/models/.gitkeep
+
+# Benchmark output
+benchmark_results/

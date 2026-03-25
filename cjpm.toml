@@ -1,0 +1,14 @@
+[package]
+  name = "onnx4cj"
+  description = "ONNX Runtime C API bindings for Cangjie (仓颉)"
+  version = "0.1.0"
+  compatibility = "0.53.x"
+  output_type = "static"
+  src_dir = "src"
+
+[dependencies]
+
+[build-options]
+  link_libraries = ["c", "stdc++"]
+  # Set ORT_HOME to your ONNX Runtime installation directory
+  # e.g., ORT_HOME=/usr/local/onnxruntime
